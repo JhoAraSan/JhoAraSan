@@ -1,5 +1,7 @@
 <h1 align="center"><b>Hi , I'm Jhonatan </b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
-
+<div align="center">
+![head_img](https://github.com/JhoAraSan/JhoAraSan/assets/121099548/b2fd758e-0a90-4707-849f-5e4daf0bfacf)
+</div>
 <!--
 **JhoAraSan/JhoAraSan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
