@@ -1,9 +1,10 @@
 #### [CV Link](https://www.canva.com/design/DAEQ-X6tggA/O0pJuA6FsUPqYGg6DiVLaw/view?utm_content=DAEQ-X6tggA&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 <div align="center">
   
-![head_img](https://github.com/JhoAraSan/JhoAraSan/assets/121099548/b2fd758e-0a90-4707-849f-5e4daf0bfacf)
+![Head](https://github.com/user-attachments/assets/562c5daf-0ab3-4035-baa9-6fc57600941a)
   
 </div>
+
 
 ## 💫 About Me:
 
