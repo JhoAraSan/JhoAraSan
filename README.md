@@ -1,15 +1,15 @@
-#### [CV Link](https://www.canva.com/design/DAEQ-X6tggA/O0pJuA6FsUPqYGg6DiVLaw/view?utm_content=DAEQ-X6tggA&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+#### [CV Link](https://1drv.ms/b/c/38a8ef003e56af79/EQYZbasgq9pIhbWY1cp63U4ByXcSaPTbFerRzRg5XbS3OA?e=hMT5Je)
 <div align="center">
   
-![Head](https://github.com/user-attachments/assets/562c5daf-0ab3-4035-baa9-6fc57600941a)
-  
+![Head](https://github.com/user-attachments/assets/86e0aed8-aa4d-4a48-80ed-acb98eb44ef1)
+
 </div>
 
 
 ## 💫 About Me:
 
 <div align="justify">
-As a performance-driven Python Developer with over a year of experience in cloud and backend development, I possess a strong proficiency in Python and a solid foundation in SQL, Linux, AWS, Terraform, YAML, Docker, and Kubernetes. My expertise lies in optimizing processes and enhancing efficiencies through Python-based applications and cloud solutions. I am also adept at sharing knowledge with team members, fostering a collaborative and productive working environment. I am eager to leverage my programming and cloud expertise to contribute to innovative projects.
+As an Electronic Engineer with over three years of experience in cybersecurity, I specialize in backend development and cloud infrastructure. My expertise lies in Python programming, with a strong background in SQL, AWS, Terraform, YAML, Docker, and Kubernetes. I am passionate about securing scalable applications and enhancing operational efficiency through automation and cloud solutions. With hands-on experience in incident management and system administration, I am driven to leverage my skills to deliver innovative and secure software solutions. I thrive in collaborative environments and am always eager to learn and contribute to meaningful projects.
 </div>
 
 ## 💻 Tech Stack:
