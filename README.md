@@ -10,12 +10,10 @@
 
 <div align="justify">
 I’m an Electronic Engineer with over three years of hands-on experience in cybersecurity, specializing in system hardening, incident response, and backend automation. I develop tools and internal applications in Python that improve operational efficiency, with a strong command of SQL, AWS, Terraform, Docker, and Kubernetes.
-
+<br><br>
 Currently, I work as a cybersecurity engineer performing vulnerability assessments, business continuity testing, and implementing cybersecurity documentation aligned with the ISO/IEC 27001 standard. My focus is on strengthening organizational resilience and ensuring compliance through structured, risk-based practices.
-
+<br><br>
 Passionate about secure and scalable systems, I continuously explore best practices in cloud security and infrastructure as code, with a growing focus on DevSecOps. I value collaboration, mentorship, and continuous learning to deliver meaningful impact through technology.
-
-
 </div>
 
 ## 💻 Tech Stack:
