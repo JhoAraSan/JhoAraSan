@@ -8,16 +8,41 @@ Guide to restoring and customizing your work environment on Windows with support
 
 ## 📦 Installation Order
 
-### 1. Install Python
+### 1. Install PowerShell 7
+- Download from [GitHub Releases](https://github.com/PowerShell/PowerShell/releases) or Use winget
+  Search Version
+  ```bash
+  winget search Microsoft.PowerShell
+  ```
+  Select version with ID and install
+  ```bash
+  winget install --id Microsoft.PowerShell.Preview --source winget
+  ```
+- Verify with:
+  ```bash
+  pwsh
+  ```
+- 🚫 Hide Windows PowerShell (v5) from Windows Terminal
+  1. Open Windows Terminal.
+  2. Click the dropdown arrow (˅) next to the tab bar and select Settings.
+  3. In Startup > Default Profile, set it to PowerShell 7 (or your preferred shell).
+  4. Go to Profiles > Windows PowerShell (this is version 5).
+  5. Scroll down and enable Hide profile from dropdown.
+  6. Save the changes and close the settings.
+
+### 2. Install Python
 - Download from [python.org](https://www.python.org/downloads/)
 - Check the "Add Python to PATH" option during installation
 - Verify the installation:
   ```bash
   python --version
   ```
-
-### 2. Install Git
-- Download from [git-scm.com](https://git-scm.com/)
+  
+### 3. Install Git
+- Download from [git-scm.com](https://git-scm.com/) or Winget
+  ```powershell
+  winget install --id Git.Git -e --source winget
+  ```
 - During setup:
   - "Use Git from the command line and also from 3rd-party software"
   - "Checkout as-is, commit Unix-style line endings"
@@ -27,12 +52,16 @@ Guide to restoring and customizing your work environment on Windows with support
   git config --global user.name "YourName"
   git config --global user.email "youremail@example.com"
   ```
+- Verify config:
+  ```bash
+  git config list
+  ``` 
 
-### 3. Install Anaconda (optional)
+### 4. Install Anaconda (optional)
 - Download from [anaconda.com](https://www.anaconda.com/)
 - Create virtual environments using `conda` or use `venv` for a lighter setup
 
-### 4. Install WSL with Kali Linux
+### 5. Install WSL with Kali Linux
 ```powershell
 wsl --install -d kali-linux
 ```
@@ -41,13 +70,6 @@ wsl --install -d kali-linux
 ---
 
 ## 💻 Consoles and Customization
-
-### 5. Install PowerShell 7
-- Download from [GitHub Releases](https://github.com/PowerShell/PowerShell/releases)
-- Verify with:
-  ```bash
-  pwsh
-  ```
 
 ### 6. Install Clink (for CMD)
 - Download from [chrisant996/clink](https://github.com/chrisant996/clink/releases)
