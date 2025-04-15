@@ -123,26 +123,43 @@ wsl --list --online
 - Download from [chrisant996/clink](https://github.com/chrisant996/clink/releases)
 > Enhances CMD experience and allows the use of Oh-My-Posh
 
----
-
-## 🎨 Visual Customization
-
-### 8. Install FiraCode Nerd Font
-- Download from [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
-- Apply in terminals: PowerShell, CMD, WSL
-
-### 9. Install Oh-My-Posh
+### 8. Install Oh-My-Posh PowerShell
+- [Oh-My-Posh Page](https://ohmyposh.dev/docs/installation/windows)
+  
 ```powershell
 winget install JanDeDobbeleer.OhMyPosh -s winget
 ```
-
-### 10. Use a Custom Theme
-- Save your `.omp.json` file (e.g., `craver-style.omp.json`)
-
-#### PowerShell:
+- After installation, **close** the console
+- **Run as Administrator**, then execute:
 ```powershell
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\craver-style.omp.json" | Invoke-Expression
+oh-my-posh font install
 ```
+- Select your preferred font (e.g., FiraCode)
+- Open Windows Terminal > Settings > Defaults > Appearance:
+  - **Font face**: select preferred font (e.g., `FiraCode Nerd Font Mono`)
+  > Mono fonts are recommended to maintain correct spacing
+- Try open
+   ```powershell
+  notepad $PROFILE
+  ```
+  When the above command gives an error, make sure to create the profile first and add the oh-my-posh init above.
+  
+  ```powershell
+  New-Item -Path $PROFILE -Type File -Force
+  ```
+  add next line, save and rebbot terminal
+  ```text
+  oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/craver.omp.json" | Invoke-Expression
+  ```
+  > use comand `set` on CMD for search environment variables
+  Now install Terminals-Icons 
+  ```powershell
+  Install-Module -Name Terminal-Icons -Repository PSGallery
+  ```
+  Now add this line to `$PROFILE`
+  ```powershell
+  Import-Module Terminal-Icons
+  ```
 
 #### WSL (bash):
 ```bash
