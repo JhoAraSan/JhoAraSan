@@ -95,6 +95,15 @@ wsl --install -d kali-linux
 ```
 > Make sure to restart and open Linux Distribution at least once to complete the installation.
 
+### Troubleshooting:
+If you get the error `Wsl/CallMsi/Install/REGDB_E_CLASSNOTREG`:
+1. Visit the [WSL releases page](https://github.com/microsoft/WSL/releases/)
+2. Download and install the **latest version** for your system
+3. Verify installation with:
+```powershell
+wsl --list --online
+```
+
 ---
 
 ## 💻 Consoles and Customization
