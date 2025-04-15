@@ -22,7 +22,8 @@ Guide to restoring and customizing your work environment on Windows with support
   ```bash
   pwsh
   ```
-- 🚫 Hide Windows PowerShell (v5) from Windows Terminal
+
+  🚫 Hide Windows PowerShell (v5) from Windows Terminal
   1. Open Windows Terminal.
   2. Click the dropdown arrow (˅) next to the tab bar and select Settings.
   3. In Startup > Default Profile, set it to PowerShell 7 (or your preferred shell).
@@ -48,6 +49,9 @@ Guide to restoring and customizing your work environment on Windows with support
   - "Checkout as-is, commit Unix-style line endings"
 
 - Configure Git:
+  1. Open Windows Terminal.
+  2. Click the dropdown arrow (˅) next to the tab bar and select GitBash.
+     
   ```bash
   git config --global user.name "YourName"
   git config --global user.email "youremail@example.com"
@@ -60,6 +64,21 @@ Guide to restoring and customizing your work environment on Windows with support
 ### 4. Install Anaconda (optional)
 - Download from [anaconda.com](https://www.anaconda.com/)
 - Create virtual environments using `conda` or use `venv` for a lighter setup
+
+  ➕ Add Anaconda PowerShell Prompt to Windows Terminal (Manual Method)
+  1. Search for Anaconda PowerShell Prompt in the Windows Start Menu.
+  2. Right-click > Open file location.
+  3. In the File Explorer window, right-click on the shortcut > Properties.
+  4. Go to the Shortcut tab:
+     - Copy the content from Target (this is your launch command).
+     - Click Change Icon and copy the path of the icon shown there.
+  5. Now open Windows Terminal > Settings.
+  6. Add a New Profile:
+     - Name: Anaconda PowerShell
+     - Command line: Paste the value copied from the Target field.
+     - Icon: Paste the path from the Change Icon window.
+  7. Save the changes and you're done!
+> Repeat the same steps for the Anaconda Prompt (CMD version) if desired.
 
 ### 5. Install WSL with Kali Linux
 ```powershell
