@@ -16,7 +16,7 @@ Guide to restoring and customizing your work environment on Windows with support
   ```
   Select version with ID and install
   ```bash
-  winget install --id Microsoft.PowerShell.Preview --source winget
+  winget install --id Microsoft.PowerShell --source winget
   ```
 - Verify with:
   ```bash
@@ -80,11 +80,20 @@ Guide to restoring and customizing your work environment on Windows with support
   7. Save the changes and you're done!
 > Repeat the same steps for the Anaconda Prompt (CMD version) if desired.
 
-### 5. Install WSL with Kali Linux
+### 5. WSL and Linux Distribution Setup
+**Prerequisites**
+1. Enable WSL from "Turn Windows features on or off":
+   - Check the box: Windows Subsystem for Linux
+   - Check the box: Virtual Machine Platform
+2. Restart your PC.
+3. Open Task Manager > Performance and check that Virtualization is enabled in your system.
+
+Install WSL with Your prefer distribution
 ```powershell
+wsl --list --online
 wsl --install -d kali-linux
 ```
-> Make sure to restart and open Kali at least once to complete the installation.
+> Make sure to restart and open Linux Distribution at least once to complete the installation.
 
 ---
 
