@@ -104,6 +104,15 @@ If you get the error `Wsl/CallMsi/Install/REGDB_E_CLASSNOTREG`:
 wsl --list --online
 ```
 
+### Win-Kex On Kali-Linux:
+Win-KeX provides a GUI desktop experience for Kali Linux in Windows Subsystem for Linux (WSL 2)
+1. Visit the [Win-Kex](https://www.kali.org/docs/wsl/win-kex/#install-win-kex).
+2. Download and install the **latest version** for your system
+3. Verify installation with:
+```powershell
+wsl --list --online
+```
+
 ---
 
 ## 💻 Consoles and Customization
