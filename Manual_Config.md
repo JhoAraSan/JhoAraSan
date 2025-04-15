@@ -1,74 +1,76 @@
-# 🧰 Manual de Configuración de Consolas Post-Formateo
-[Volver](README:MD)
-Guía para restaurar y personalizar tu entorno de trabajo en Windows con soporte para WSL, PowerShell, CMD y Oh-My-Posh. Ideal para desarrolladores y entusiastas que desean un setup eficiente y visualmente atractivo.
+# 🧰 Post-Format Console Configuration Manual
+
+Guide to restoring and customizing your work environment on Windows with support for WSL, PowerShell, CMD, and Oh-My-Posh. Ideal for developers and enthusiasts who want an efficient and visually appealing setup.
+
+> [Return](README.md)
 
 ---
 
-## 📦 Orden de Instalación
+## 📦 Installation Order
 
-### 1. Instalar Python
-- Descarga desde [python.org](https://www.python.org/downloads/)
-- Marcar "Add Python to PATH" durante la instalación
-- Verifica la instalación:
+### 1. Install Python
+- Download from [python.org](https://www.python.org/downloads/)
+- Check the "Add Python to PATH" option during installation
+- Verify the installation:
   ```bash
   python --version
   ```
 
-### 2. Instalar Git
-- Descargar desde [git-scm.com](https://git-scm.com/)
-- Durante el asistente:
+### 2. Install Git
+- Download from [git-scm.com](https://git-scm.com/)
+- During setup:
   - "Use Git from the command line and also from 3rd-party software"
   - "Checkout as-is, commit Unix-style line endings"
 
-- Configurar Git:
+- Configure Git:
   ```bash
-  git config --global user.name "TuNombre"
-  git config --global user.email "tucorreo@example.com"
+  git config --global user.name "YourName"
+  git config --global user.email "youremail@example.com"
   ```
 
-### 3. Instalar Anaconda (opcional)
-- Descargar desde [anaconda.com](https://www.anaconda.com/)
-- Crear entornos virtuales con `conda` o usar `venv` si prefieres mayor ligereza
+### 3. Install Anaconda (optional)
+- Download from [anaconda.com](https://www.anaconda.com/)
+- Create virtual environments using `conda` or use `venv` for a lighter setup
 
-### 4. Instalar WSL con Kali Linux
+### 4. Install WSL with Kali Linux
 ```powershell
 wsl --install -d kali-linux
 ```
-> Asegúrate de reiniciar y abrir Kali al menos una vez para completar la instalación.
+> Make sure to restart and open Kali at least once to complete the installation.
 
 ---
 
-## 💻 Consolas y Personalización
+## 💻 Consoles and Customization
 
-### 5. Instalar PowerShell 7
-- Descargar desde [GitHub Releases](https://github.com/PowerShell/PowerShell/releases)
-- Verificar con:
+### 5. Install PowerShell 7
+- Download from [GitHub Releases](https://github.com/PowerShell/PowerShell/releases)
+- Verify with:
   ```bash
   pwsh
   ```
 
-### 6. Instalar Clink (para CMD)
-- Descargar desde [chrisant996/clink](https://github.com/chrisant996/clink/releases)
-> Mejora la experiencia del CMD y permite usar Oh-My-Posh
+### 6. Install Clink (for CMD)
+- Download from [chrisant996/clink](https://github.com/chrisant996/clink/releases)
+> Enhances CMD experience and allows the use of Oh-My-Posh
 
-### 7. Instalar Windows Terminal (recomendado)
-- Desde Microsoft Store o [GitHub](https://github.com/microsoft/terminal)
+### 7. Install Windows Terminal (recommended)
+- From Microsoft Store or [GitHub](https://github.com/microsoft/terminal)
 
 ---
 
-## 🎨 Personalización Visual
+## 🎨 Visual Customization
 
-### 8. Instalar FiraCode Nerd Font
-- Descargar desde [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
-- Aplicar en las terminales: PowerShell, CMD, WSL
+### 8. Install FiraCode Nerd Font
+- Download from [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+- Apply in terminals: PowerShell, CMD, WSL
 
-### 9. Instalar Oh-My-Posh
+### 9. Install Oh-My-Posh
 ```powershell
 winget install JanDeDobbeleer.OhMyPosh -s winget
 ```
 
-### 10. Usar Tema Personalizado
-- Guardar tu archivo `.omp.json` (ej: `craver-style.omp.json`)
+### 10. Use a Custom Theme
+- Save your `.omp.json` file (e.g., `craver-style.omp.json`)
 
 #### PowerShell:
 ```powershell
@@ -81,30 +83,30 @@ eval "$(oh-my-posh init bash --config ~/.poshthemes/craver-style.omp.json)"
 ```
 
 #### CMD + Clink
-- Colocar el comando en el archivo de inicio de Clink (ej: `~/.clink_profile`)
+- Place the command in Clink's startup file (e.g., `~/.clink_profile`)
 
 ---
 
-## 🔁 Transient Prompt (Limpieza Automática del Prompt)
+## 🔁 Transient Prompt (Clean Previous Prompts)
 
-Agrega al `.omp.json`:
+Add to your `.omp.json`:
 ```json
 "transient_prompt": {
   "enabled": true
 }
 ```
 
-Esto oculta el prompt anterior y mantiene el terminal limpio después de ejecutar comandos.
+This hides the previous prompt and keeps your terminal clean after each command.
 
 ---
 
-## 🎯 Recomendaciones Finales
+## 🎯 Final Recommendations
 
-- Mantén este archivo actualizado y sincronizado con tu GitHub
-- Puedes exportar tus configuraciones VSCode en la nube iniciando sesión
-- Almacena tu tema `.omp.json` en un repo de respaldo
+- Keep this file updated and synced with your GitHub
+- Use VSCode's cloud sync feature by signing in
+- Store your `.omp.json` theme in a backup repo
 
 ---
 
-> Creado con ❤️ por [TuNombre] para desarrolladores que aman tener su entorno impecable.
+> Created with ❤️ by [YourName] for developers who love having a clean and productive environment.
 
