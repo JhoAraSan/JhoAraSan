@@ -66,51 +66,51 @@ Guide to restoring and customizing your work environment on Windows with support
 - Create virtual environments using `conda` or use `venv` for a lighter setup
 
   ➕ Add Anaconda PowerShell Prompt to Windows Terminal (Manual Method)
-  1. Search for Anaconda PowerShell Prompt in the Windows Start Menu.
-  2. Right-click > Open file location.
-  3. In the File Explorer window, right-click on the shortcut > Properties.
-  4. Go to the Shortcut tab:
-     - Copy the content from Target (this is your launch command).
-     - Click Change Icon and copy the path of the icon shown there.
-  5. Now open Windows Terminal > Settings.
-  6. Add a New Profile:
-     - Name: Anaconda PowerShell
-     - Command line: Paste the value copied from the Target field.
-     - Icon: Paste the path from the Change Icon window.
-  7. Save the changes and you're done!
-> Repeat the same steps for the Anaconda Prompt (CMD version) if desired.
+    1. Search for Anaconda PowerShell Prompt in the Windows Start Menu.
+    2. Right-click > Open file location.
+    3. In the File Explorer window, right-click on the shortcut > Properties.
+    4. Go to the Shortcut tab:
+       - Copy the content from Target (this is your launch command).
+       - Click Change Icon and copy the path of the icon shown there.
+    5. Now open Windows Terminal > Settings.
+    6. Add a New Profile:
+       - Name: Anaconda PowerShell
+       - Command line: Paste the value copied from the Target field.
+       - Icon: Paste the path from the Change Icon window.
+    7. Save the changes and you're done!
+    > Repeat the same steps for the Anaconda Prompt (CMD version) if desired.
 
 ### 5. WSL and Linux Distribution Setup
-**Prerequisites**
-1. Enable WSL from "Turn Windows features on or off":
-   - Check the box: Windows Subsystem for Linux
-   - Check the box: Virtual Machine Platform
-2. Restart your PC.
-3. Open Task Manager > Performance and check that Virtualization is enabled in your system.
+  **Prerequisites**
+  1. Enable WSL from "Turn Windows features on or off":
+     - Check the box: Windows Subsystem for Linux
+     - Check the box: Virtual Machine Platform
+  2. Restart your PC.
+  3. Open Task Manager > Performance and check that Virtualization is enabled in your system.
 
-Install WSL with Your prefer distribution
-```powershell
-wsl --list --online
-wsl --install -d kali-linux
-```
-> Make sure to restart and open Linux Distribution at least once to complete the installation.
+  Install WSL with Your prefer distribution
+  ```powershell
+  wsl --list --online
+  wsl --install -d kali-linux
+  ```
+  > Make sure to restart and open Linux Distribution at least once to complete the installation.
+  
+  ### _Troubleshooting:_
+  If you get the error `Wsl/CallMsi/Install/REGDB_E_CLASSNOTREG`:
+  1. Visit the [WSL releases page](https://github.com/microsoft/WSL/releases/)
+  2. Download and install the **latest version** for your system
+  3. Verify installation with:
+  ```powershell
+  wsl --list --online
+  ```
 
-### _Troubleshooting:_
-If you get the error `Wsl/CallMsi/Install/REGDB_E_CLASSNOTREG`:
-1. Visit the [WSL releases page](https://github.com/microsoft/WSL/releases/)
-2. Download and install the **latest version** for your system
-3. Verify installation with:
-```powershell
-wsl --list --online
-```
-
-### _Win-Kex On Kali-Linux:_
-Win-KeX provides a GUI desktop experience for Kali Linux in Windows Subsystem for Linux (WSL 2)
-1. Visit the [Win-Kex](https://www.kali.org/docs/wsl/win-kex/#install-win-kex).
-2. Install Win-Kex and include large Kali-linux and shortcut on Terminal. 
-```powershell
-wsl --list --online
-```
+  ### _Win-Kex On Kali-Linux:_
+  Win-KeX provides a GUI desktop experience for Kali Linux in Windows Subsystem for Linux (WSL 2)
+  1. Visit the [Win-Kex](https://www.kali.org/docs/wsl/win-kex/#install-win-kex).
+  2. Install Win-Kex and include large Kali-linux and shortcut on Terminal. 
+  ```powershell
+  wsl --list --online
+  ```
 
 ---
 
@@ -156,32 +156,34 @@ oh-my-posh font install
   ```powershell
   Install-Module -Name Terminal-Icons -Repository PSGallery
   ```
-  Now add this line to `$PROFILE`
+  Now add this line to `$PROFILE` this use icons and can use ListView
+  
   ```powershell
   Import-Module Terminal-Icons
+  Set-PSReadLineOption -PredictionViewStyle ListView
   ```
+#### CMD + Clink:
+  1. In CMD, check if `oh-my-posh` works.
+  2. Run `clink info` and locate the scripts folder.
+  3. Copy the path to your `%LocalAppData%\clink\scripts` folder.
+  4. Create a file named `oh-my-posh.lua` in that folder.
+  5. Add this line (update `<YourUser>` accordingly):
+  ```lua
+  load(io.popen('oh-my-posh init cmd --config "C:/Users/<YourUser>/AppData/Local/Programs/oh-my-   posh/themes/craver_edit.omp.json"'):read("*a"))()
+  ```
+  6. To find the correct path, use `set` in CMD and search for `oh-my-posh` theme paths.
+  7. Restart CMD and execute:
+  ```bash
+  clink set prompt.transient always
+  ```
+  > This ensures a clean one-line prompt each time.
+
+---
 
 #### WSL (bash):
 ```bash
 eval "$(oh-my-posh init bash --config ~/.poshthemes/craver-style.omp.json)"
 ```
-
-#### CMD + Clink
-- Place the command in Clink's startup file (e.g., `~/.clink_profile`)
-
----
-
-## 🔁 Transient Prompt (Clean Previous Prompts)
-
-Add to your `.omp.json`:
-```json
-"transient_prompt": {
-  "enabled": true
-}
-```
-
-This hides the previous prompt and keeps your terminal clean after each command.
-
 ---
 
 ## 🎯 Final Recommendations
