@@ -95,7 +95,7 @@ wsl --install -d kali-linux
 ```
 > Make sure to restart and open Linux Distribution at least once to complete the installation.
 
-### Troubleshooting:
+### _Troubleshooting:_
 If you get the error `Wsl/CallMsi/Install/REGDB_E_CLASSNOTREG`:
 1. Visit the [WSL releases page](https://github.com/microsoft/WSL/releases/)
 2. Download and install the **latest version** for your system
@@ -104,11 +104,10 @@ If you get the error `Wsl/CallMsi/Install/REGDB_E_CLASSNOTREG`:
 wsl --list --online
 ```
 
-### Win-Kex On Kali-Linux:
+### _Win-Kex On Kali-Linux:_
 Win-KeX provides a GUI desktop experience for Kali Linux in Windows Subsystem for Linux (WSL 2)
 1. Visit the [Win-Kex](https://www.kali.org/docs/wsl/win-kex/#install-win-kex).
-2. Download and install the **latest version** for your system
-3. Verify installation with:
+2. Install Win-Kex and include large Kali-linux and shortcut on Terminal. 
 ```powershell
 wsl --list --online
 ```
@@ -117,12 +116,12 @@ wsl --list --online
 
 ## 💻 Consoles and Customization
 
-### 6. Install Clink (for CMD)
+### 6. Verify if Windows Terminal was installed (recommended)
+- From Microsoft Store or [GitHub](https://github.com/microsoft/terminal)
+
+### 7. Install Clink (for CMD)
 - Download from [chrisant996/clink](https://github.com/chrisant996/clink/releases)
 > Enhances CMD experience and allows the use of Oh-My-Posh
-
-### 7. Install Windows Terminal (recommended)
-- From Microsoft Store or [GitHub](https://github.com/microsoft/terminal)
 
 ---
 
