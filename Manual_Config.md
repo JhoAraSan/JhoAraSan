@@ -66,29 +66,33 @@ Guide to restoring and customizing your work environment on Windows with support
 - Create virtual environments using `conda` or use `venv` for a lighter setup
 
   ➕ Add Anaconda PowerShell Prompt to Windows Terminal (Manual Method)
-    1. Search for Anaconda PowerShell Prompt in the Windows Start Menu.
-    2. Right-click > Open file location.
-    3. In the File Explorer window, right-click on the shortcut > Properties.
-    4. Go to the Shortcut tab:
-       - Copy the content from Target (this is your launch command).
-       - Click Change Icon and copy the path of the icon shown there.
-    5. Now open Windows Terminal > Settings.
-    6. Add a New Profile:
-       - Name: Anaconda PowerShell
-       - Command line: Paste the value copied from the Target field.
-       - Icon: Paste the path from the Change Icon window.
-    7. Save the changes and you're done!
-    > Repeat the same steps for the Anaconda Prompt (CMD version) if desired.
+  1. Search for Anaconda PowerShell Prompt in the Windows Start Menu.
+  2. Right-click > Open file location.
+  3. In the File Explorer window, right-click on the shortcut > Properties.
+  4. Go to he Shortcut tab:
+    - Copy the content from Target (this is your launch command).
+    - Click Change Icon and copy the path of the icon shown there.
+  5. Now open Windows Terminal > Settings.
+  6. Add a New Profile:
+    - Name: Anaconda PowerShell
+    - Command line: Paste the value copied from the Target field.
+    - Icon: Paste the path from the Change Icon window.
+  7. Save the changes and you're done!
+  
+  > Repeat the same steps for the Anaconda Prompt (CMD version) if desired.
 
 ### 5. WSL and Linux Distribution Setup
-  **Prerequisites**
+
+**Prerequisites**
+
   1. Enable WSL from "Turn Windows features on or off":
-     - Check the box: Windows Subsystem for Linux
-     - Check the box: Virtual Machine Platform
+    - Check the box: Windows Subsystem for Linux
+    - Check the box: Virtual Machine Platform
   2. Restart your PC.
   3. Open Task Manager > Performance and check that Virtualization is enabled in your system.
 
   Install WSL with Your prefer distribution
+
   ```powershell
   wsl --list --online
   wsl --install -d kali-linux
