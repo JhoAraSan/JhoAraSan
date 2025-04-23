@@ -16,6 +16,8 @@ Currently, I work as a cybersecurity engineer performing vulnerability assessmen
 Passionate about secure and scalable systems, I continuously explore best practices in cloud security and infrastructure as code, with a growing focus on DevSecOps. I value collaboration, mentorship, and continuous learning to deliver meaningful impact through technology.
 </p></div>
 
+---
+
 ## 🧰 Post-Format Console Configuration Manual
 
 <div align="justify">
@@ -23,6 +25,15 @@ This repository contains a detailed guide to restore and customize your developm
 </div>
 
 > 📝 Read the full guide here: [Manual](Manual_Config.md)
+
+### 🛠 Featured Project: Excel + Notion Automation
+
+Automates Excel sheet processing and updates a Notion database using Python.  
+📌 *Repository and documentation are in Spanish.*
+
+👉 [Check the repo](https://github.com/JhoAraSan/Notion_Mail_Tables)
+
+---
 
 ## 💻 Tech Stack:
 
