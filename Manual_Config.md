@@ -192,6 +192,17 @@ eval "$(oh-my-posh init bash --config ~/.poshthemes/craver-style.omp.json)"
 
 ## 🎯 Final Recommendations
 
+I prefer Transient style!, then I add this lines on `.omp.json`:
+```bash
+  {
+  "transient_prompt": {
+    "background": "transparent",
+    "foreground": "#ffffff",
+    "template": "{{ .Shell }}> "
+  }
+}
+```
+
 - Keep this file updated and synced with your GitHub
 - Use VSCode's cloud sync feature by signing in
 - Store your `.omp.json` theme in a backup repo
