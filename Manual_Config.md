@@ -113,7 +113,9 @@ Guide to restoring and customizing your work environment on Windows with support
   1. Visit the [Win-Kex](https://www.kali.org/docs/wsl/win-kex/#install-win-kex).
   2. Install Win-Kex and include large Kali-linux and shortcut on Terminal. 
   ```powershell
-  wsl --list --online
+ kali@kali:~$ sudo apt update
+ kali@kali:~$
+ kali@kali:~$ sudo apt install -y kali-win-kex
   ```
 
 ---
