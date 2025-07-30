@@ -61,7 +61,7 @@ Guide to restoring and customizing your work environment on Windows with support
   git config list
   ``` 
 
-### 4. Install Anaconda (optional)
+### 4. Install Miniconda (optional)
 - Download from [anaconda.com](https://www.anaconda.com/)
 - Create virtual environments using `conda` or use `venv` for a lighter setup
 
